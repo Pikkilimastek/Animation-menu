@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>Animation menu</title>
+</head>
+<body>
+    <div class="container" onclick="expand()">
+        <i class="fa fa-plus"  id="plus" ></i>
+    </div>
+    <div class="menu-group" id="menu">
+        <a href=""><img src ="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png"></a>
+        <a href=""><img src ="https://www.freepnglogos.com/uploads/whatsapp-png-image-9.png"></a>
+        <a href=""><img src ="https://www.freeiconspng.com/uploads/logo-twitter-circle-png-transparent-image-1.png"></a>
+        <a href=""><img src ="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png"></a>
+        <a href=""><img src ="https://www.freepnglogos.com/uploads/instagram-logos-png-images-free-download-5.png"></a>
+        <a href=""><img src ="https://www.freeiconspng.com/uploads/iconmonstr-email-4-icon-27.png">
+    </div>
+
+    <!---script-->
+
+    <script>
+        var menu = document.getElementById("menu");
+        var plus = document.getElementById("plus")
+        var abc = 0;
+        function expand(){
+            if (abc ==0 ){
+                menu.style.transform = "scale(3)";
+                plus.style.transform = "rotate(360deg)";
+                abc = 1;
+            }else{
+                menu.style.transform = "scale(0)";
+                plus.style.transform = "rotate(0deg)";
+                abc = 0;
+            }
+        }
+    </script>
+
+</body>
+</html>
